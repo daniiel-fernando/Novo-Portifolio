@@ -1,47 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="topo">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="Imagem/Elegantthemes-Beautiful-Flat-Dev.ico" type="image/x-icon">
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="Style.css">
-  <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-  crossorigin="anonymous"></script>
   <title>Daniel</title>
-  
+  <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./Css/Style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <!-- Início da barra de navegação -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Alternar de navegação</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <span class="navbar-brand">Daniel Fernando</span>
-      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Daniel Fernando</a>
+
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#home">Inicio<span class="sr-only">(current)</span></a></li>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Início<span class="visually-hidden">(current)</span></a>
+          </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#portfolio-link">Portfolio</a></li>
-          <li><a href="#about-link">Sobre</a></li>
-          <li><a href="#contact-link">Contato</a></li>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-link">Contato</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- Fim da barra de navegação -->
+
+  <!-- Início da seção inicial -->
   <a class="anchor" id="home"></a>
   <div id="splash" class="container-fluid">
     <div class="row">
@@ -60,6 +66,9 @@
       </div>
     </div>
   </div>
+  <!-- Fim da seção inicial -->
+
+  <!-- Início da seção de portfólio -->
   <a class="anchor" id="portfolio-link"></a>
   <div id="portfolio" class="container-fluid">
     <div class="row">
@@ -68,13 +77,14 @@
         <hr />
         <div class="container">
           <div class="row">
+            <!-- Início do primeiro item de portfólio -->
             <div class="col-lg-6">
               <div class="thumbnail">
                 <a href="https://daniiel-fernando.github.io/Landing-Page-Netflix/" target="_blank">
                   <div class="thumbnail-hover text-center">
                     <i class="fa fa-eye fa-4x"></i>
                   </div>
-                  <img class="img-responsive"
+                  <img class="img-fluid img-thumbnail"
                     src="https://images.pexels.com/photos/987586/pexels-photo-987586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
                 </a>
                 <div class="caption">
@@ -83,14 +93,19 @@
                 </div>
               </div>
             </div>
+
+            <!-- Fim do primeiro item de portfólio -->
+
+            <!-- Início do segundo item de portfólio -->
             <div class="col-lg-6">
               <div class="thumbnail">
                 <a href="https://daniiel-fernando.github.io/Biblioteca-virtual/" target="_blank">
                   <div class="thumbnail-hover text-center">
                     <i class="fa fa-eye fa-4x"></i>
                   </div>
-                  <img
-                    src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                  <img class="img-fluid img-thumbnail"
+                    src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Biblioteca Virtual">
                 </a>
                 <div class="caption">
                   <h3>Biblioteca Virtual</h3>
@@ -98,31 +113,41 @@
                 </div>
               </div>
             </div>
+
+            <!-- Fim do segundo item de portfólio -->
           </div>
+
           <div class="row">
+            <!-- Início do terceiro item de portfólio -->
             <div class="col-lg-4">
-              <div class="thumbnail">
+              <div class="card border-0">
                 <a href="https://daniiel-fernando.github.io/Museu-Nacional/" target="_blank">
                   <div class="thumbnail-hover text-center">
                     <i class="fa fa-eye fa-4x"></i>
                   </div>
                   <img
-                    src="https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?cs=srgb&dl=pexels-julio-nery-1839919.jpg&fm=jpg">
+                    src="https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?cs=srgb&dl=pexels-julio-nery-1839919.jpg&fm=jpg"
+                    class="card-img-top" alt="Projeto Museu Nacional">
                 </a>
-                <div class="caption">
-                  <h3>Projeto Museu Nacional</h3>
-                  <p>Projeto do museu nacional que fiz enquanto estava estudando</p>
+                <div class="card-body">
+                  <h3 class="card-title">Projeto Museu Nacional</h3>
+                  <p class="card-text">Projeto do museu nacional que fiz enquanto estava estudando</p>
                 </div>
               </div>
             </div>
+
+            <!-- Fim do terceiro item de portfólio -->
+
+            <!-- Início do quarto item de portfólio -->
             <div class="col-lg-4">
-              <div class="thumbnail">
+              <div class="card border-0">
                 <a href="https://daniiel-fernando.github.io/Calculadora/" target="_blank">
                   <div class="thumbnail-hover text-center">
                     <i class="fa fa-eye fa-4x"></i>
                   </div>
                   <img
-                    src="https://images.pexels.com/photos/6694916/pexels-photo-6694916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    src="https://images.pexels.com/photos/6694916/pexels-photo-6694916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="card-img-top" alt="Calculadora modo Dark">
                 </a>
                 <div class="caption">
                   <h3>Calculadora modo Dark</h3>
@@ -130,14 +155,19 @@
                 </div>
               </div>
             </div>
+
+            <!-- Fim do quarto item de portfólio -->
+
+            <!-- Início do quinto item de portfólio -->
             <div class="col-lg-4">
-              <div class="thumbnail">
+              <div class="card border-0">
                 <a href="https://daniiel-fernando.github.io/Daniel/" target="_blank">
                   <div class="thumbnail-hover text-center">
                     <i class="fa fa-eye fa-4x"></i>
                   </div>
                   <img
-                    src="https://images.pexels.com/photos/943101/pexels-photo-943101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    src="https://images.pexels.com/photos/943101/pexels-photo-943101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="card-img-top" alt="Portifolio em HTML & CSS">
                 </a>
                 <div class="caption">
                   <h3>Portifolio em HTML & CSS</h3>
@@ -145,11 +175,16 @@
                 </div>
               </div>
             </div>
+
+            <!-- Fim do quinto item de portfólio -->
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- Fim da seção de portfólio -->
+
+  <!-- Início da seção Sobre -->
   <a class="anchor" id="about-link"></a>
   <div id="about" class="container-fluid text-center">
     <h1>SOBRE</h1>
@@ -157,16 +192,21 @@
     <div class="container">
       <div class="row row-eq-height">
         <div class="col-lg-3">
-          <img class="img-responsive img-circle center-block" src="Imagem/Perfil.jpg" alt="Daniel-Fernando" />
+          <img class="img-fluid rounded-circle center-block" src="Imagem/Perfil.jpg" alt="Daniel-Fernando" />
         </div>
         <div id="white-bg" class="col-lg-8">
           <p>
-            Meu nome é Daniel Fernando dos Santos, Atualmente estou estudando desenvolvimento-Web onde quero me aprofundar mais a cada dia nesta area onde eu sou tão apaixonado, neste site você podera encontrar alguns dos meus projetos e descobrir um pouco mais sobre a minha pessoa.
+            Meu nome é Daniel Fernando dos Santos, Atualmente estou estudando desenvolvimento-Web onde quero me
+            aprofundar mais a cada dia nesta área onde eu sou tão apaixonado, neste site você poderá encontrar alguns
+            dos meus projetos e descobrir um pouco mais sobre a minha pessoa.
           </p>
         </div>
       </div>
     </div>
   </div>
+  <!-- Fim da seção Sobre -->
+
+  <!-- Início da seção de Contato -->
   <a class="anchor" id="contact-link"></a>
   <div id="contact" class="container-fluid text-center">
     <h1>Contatos</h1>
@@ -204,7 +244,7 @@
           <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.888905518904!2d-37.0751756851134!3d-10.89604692452727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab322deb46f0f%3A0xee20c0fdc8660fb9!2sR.%20Cabo%20Jordino%2C%20621%20-%20Dezoito%20do%20Forte%2C%20Aracaju%20-%20SE%2C%2049072-080!5e0!3m2!1spt-BR!2sbr!4v1668261723784!5m2!1spt-BR!2sbr"
-              width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
         <div class="col-lg-4">
@@ -219,6 +259,8 @@
       </div>
     </div>
   </div>
+  <!-- Fim da seção de Contato -->
   <script src="Main/main.js"></script>
 </body>
+
 </html>
